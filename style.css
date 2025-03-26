@@ -200,6 +200,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:20px;
 }
 
 .about-content {
@@ -322,6 +323,8 @@ video {
 .about-image {
     flex: 1;
     max-width: 45%;
+    display:flex;
+    justify-content: flex-end;
 }
 
 .about-image img {
