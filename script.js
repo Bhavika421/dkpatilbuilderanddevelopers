@@ -123,3 +123,37 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 // Initialize the showcase
 updateShowcase();
 startAutoScroll();
+
+
+
+////////////POP UP/////////////
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const introVideo = document.getElementById("introVideo");
+    const watchIntroBtn = document.querySelector(".watch-intro");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // Function to open the popup
+    function openPopup() {
+        popup.style.display = "flex"; // Show the popup
+        introVideo.play(); // Start playing the video
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        popup.style.display = "none"; // Hide the popup
+        introVideo.pause(); // Pause the video
+        introVideo.currentTime = 0; // Reset video to start
+    }
+
+    // Event listeners
+    watchIntroBtn.addEventListener("click", openPopup);
+    closeBtn.addEventListener("click", closePopup);
+
+    // Close popup when clicking outside the content
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            closePopup();
+        }
+    });
+});
