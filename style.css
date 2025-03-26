@@ -301,6 +301,7 @@ nav {
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+    z-index:99999;
 }
 
 video {
