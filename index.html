@@ -6,7 +6,7 @@
     <title>Construction Company</title>
   <link
       rel="icon"
-      href="C:\Users\bhavi\OneDrive\Desktop\dkpatil\fevicon icon.png"
+      href="https://cdn.glitch.global/bc293d02-f136-453b-a890-0e25f9dd91d3/Screenshot_2025-03-18_220905-removebg-preview.png?v=1742316151077"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css">
@@ -17,14 +17,14 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Company Logo"> 
+            <img src="https://cdn.glitch.global/bc293d02-f136-453b-a890-0e25f9dd91d3/Screenshot_2025-03-18_220905-removebg-preview.png?v=1742316151077" alt="Company Logo"> 
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
             <a href="#" class="contact-btn">CONTACT</a>
             <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -33,23 +33,28 @@
             <a href="#" class="contact-btn">CONTACT</a>
             <ul>
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <div class="hero">
+        <video autoplay muted loop>
+            <source src="DINKAR EMPIRE TRAILER.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="hero-content">
             <h1>Building Trust</h1>
             <p>Quality construction, innovative designs, and sustainable solutions for every project.</p>
-            <a href="#" class="view-projects">VIEW PROJECTS →</a>
+            <a href="#projects" class="btn">VIEW PROJECTS →</a>
         </div>
-    </section>
+    </div>
+    
   
-    <section class="about-us">
+    <section class="about-us" id ="about">
         <div class="about-container">
             <div class="about-content">
                 <h3>OUR STORY</h3>
@@ -75,27 +80,37 @@
                     </div>
                 </div>
 
-                <button class="watch-intro">▶ WATCH INTRO</button>
-            </div>
+                <button class="watch-intro" onclick="openPopup()">▶ WATCH INTRO</button>
+
+<!-- POPUP VIDEO CONTAINER -->
+<div class="popup-container" id="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">✖</span>
+        <video id="introVideo" controls>
+            <source src="DINKAR EMPIRE DOMBIVLI.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
             <div class="about-image">
-                <img src="C:\Users\bhavi\OneDrive\Desktop\dkpatil\building 1.jpg" alt="Team Working">
+                <img src="About_Us.png" alt="Building Construction">
             </div>
         </div>
     </section>
 
-    <div class="container">
+    <div class="container" id ="projects">
     <h1 class="title">Our Projects</h1>
     <div class="card-container">
         <div class="card" data-category="commercial">
-            <img src="C:\Users\bhavi\OneDrive\Desktop\dkpatil\building 6.webp" alt="Commercial Projects">
+            <img src="Commercial.png" alt="Commercial Projects">
             <div class="overlay">Commercial</div>
         </div>
         <div class="card" data-category="residential">
-            <img src="C:\Users\bhavi\OneDrive\Desktop\dkpatil\building 4.jpg" alt="Residential Projects">
+            <img src="Residential.png" alt="Residential Projects">
             <div class="overlay">Residential</div>
         </div>
         <div class="card" data-category="retail">
-            <img src="C:\Users\bhavi\OneDrive\Desktop\dkpatil\building 3.avif" alt="Retail Projects">
+            <img src="Retail.png" alt="Retail Projects">
             <div class="overlay">Retail</div>
         </div>
     </div>
@@ -112,7 +127,7 @@
         <div class="footer-container">
             <!-- Logo -->
             <div class="footer-column footer-logo">
-                <img src="logo.png" alt="Logo">
+                <img src="https://cdn.glitch.global/bc293d02-f136-453b-a890-0e25f9dd91d3/Screenshot_2025-03-18_220905-removebg-preview.png?v=1742316151077" alt="Logo">
             </div>
 
             <!-- Line Separator -->
@@ -138,14 +153,6 @@
                 <p>123 Street, City, Country</p>
                 <p>Email: info@example.com</p>
                 <p>Phone: +123 456 7890</p>
-                
-                <!-- Social Media Icons -->
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
             </div>
       </div>
           <div class="footer-bottom">
